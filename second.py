@@ -7,6 +7,14 @@ def number():
         print(i)
 
 
+def add(a, b):
+    # print(a + b)
+    return a + b
+
+
+c = add(10, 20)
+print('Addition of two numbers is:',c)
+
 number()
 
 second()
