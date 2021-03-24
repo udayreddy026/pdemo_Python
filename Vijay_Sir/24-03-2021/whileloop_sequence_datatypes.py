@@ -76,5 +76,14 @@ while i <= len(x)-1:
         print(x[i])
     i = i + 1"""
 
-# Natural Numbers
+# Reversing String From particular str
+
+"""str = 'Uday Reddy'
+i = len(str) - 1
+while i >= 0:
+    print(str[i])
+    i = i - 1"""
+
+
+
 
