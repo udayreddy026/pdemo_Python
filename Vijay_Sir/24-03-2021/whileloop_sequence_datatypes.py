@@ -1,10 +1,11 @@
-"""x = [10, 20, 30]
+x = [10, 20, 30]
 # We need to print 10 and 30 using while loop
 
 i = 0
 while i <= 2:
     print(x[i])
-    i = i + 2"""
+    i = i + 2
+
 
 """x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # We need to print 2,4,6 and 8 using while loop

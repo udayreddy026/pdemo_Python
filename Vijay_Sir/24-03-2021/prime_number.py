@@ -5,8 +5,8 @@ if num > 1:
         if num % i == 0:
             print("Not Prime Number")
             break
-    else:
-        print("Is a prime number")
+        else:
+            print("Is a prime number")
 else:
     print("Is not prime number")
 
