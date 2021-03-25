@@ -45,3 +45,11 @@ for i in range(0, num+1):
     for j in range(i+1):
         print("*", end=" ")
     print("")
+
+# Printing tuple elements using For_Loop
+
+t = (10, 23, 13, 45, 5, 88, 89, 98, 90, 34, 56, 23, 34, 2, 544, 3234)
+
+for i in t:
+    if i < 30 or i > 25:
+        print(i)
