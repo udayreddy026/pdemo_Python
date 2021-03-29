@@ -1,22 +1,22 @@
-# # Prime or not..........
-#
-# num = int(input("Enter a number:::"))
-#
-# if num > 1:
-#     for i in range(2, num):
-#         if num % i == 0:
-#             print("Is not a prime number!!!!", num)
-#             break
-#         print("Is a prime number:", num)
-#
-# # Swapping Dictionary keys to values and values to keys...
-# x = {'one': 1, 'two': 2, 'three': 3}
-#
-# y = {}
-#
-# for i in x:
-#     y[x[i]] = i
-# print(y)
+# Prime or not..........
+
+num = int(input("Enter a number:::"))
+
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            print("Is not a prime number!!!!", num)
+            break
+        print("Is a prime number:", num)
+
+# Swapping Dictionary keys to values and values to keys...
+x = {'one': 1, 'two': 2, 'three': 3}
+
+y = {}
+
+for i in x:
+    y[x[i]] = i
+print(y)
 
 # Packing and un-packing....
 x = (10, 20, 30, 40)  # Is a packing
