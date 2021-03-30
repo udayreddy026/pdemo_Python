@@ -4,7 +4,7 @@ def add(a, b):
 
 
 res = add(20, 30)
-# print("some of two numbers is:::", res)
+print("some of two numbers is:::", res)
 
 
 # Addition of three numbers and Average of three Numbers!!!
