@@ -1,9 +1,9 @@
 # Addition of two numbers...!!!
-# def add(a, b):
-#     return a + b
-#
-#
-# res = add(20, 30)
+def add(a, b):
+    return a + b
+
+
+res = add(20, 30)
 # print("some of two numbers is:::", res)
 
 
