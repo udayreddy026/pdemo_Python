@@ -1,18 +1,18 @@
 # Prime or Not
 
-# def prime(num1):
-#     if num1 > 1:
-#         # return True
-#         for i in range(2, num1):
-#             if num1 % 2 == 0 or num1 % 3 == 0:
-#                 return False
-#             else:
-#                 return True
-#
-#
-# num = int(input("Enter the number:::"))
-# Res = prime(num)
-# print(Res)
+def prime(num1):
+    if num1 > 1:
+        # return True
+        for i in range(2, num1):
+            if num1 % 2 == 0 or num1 % 3 == 0:
+                return False
+            else:
+                return True
+
+
+num = int(input("Enter the number:::"))
+Res = prime(num)
+print(Res)
 
 
 def Details(name, age, phone_no, city='Bengaluru'):
