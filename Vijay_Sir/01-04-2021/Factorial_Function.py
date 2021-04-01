@@ -1,8 +1,10 @@
-def fact(num):
- fact = 1
- for i in range(1, num+1):
-     fact = fact * i
-     return fact
+def fac(x):
+    fact = 1
+    for i in range(1, x + 1):
+        fact = fact * i
+    return fact
 
 
-print(fact(5))
+num = int(input("Enter the number:::"))
+
+print(fac(num))
