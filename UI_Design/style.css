@@ -1,0 +1,95 @@
+.body{
+    background: #c4c4c4;
+    /* text-align: center; */
+    padding: 20px;
+}
+.panal{
+    background-color: bisque;
+    width: 500px;
+    height: 600px;
+    border: #f0af23 4px solid;
+    border-radius: 20px;
+    /* text-align: center; */
+    padding: 10px 10px;
+    position: absolute;
+    left: 625px;
+    top: 110px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.h3{
+    text-align: center;
+    text-shadow: 10px black ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color:rgb(150, 56, 18);
+}
+
+.panel_in {
+    position: relative;
+    left: 0px;
+    padding : 10px 10px;
+}
+
+.input1{
+    background-color: rgb(252, 250, 250);
+    outline: none;
+    border: #abd0fa solid;
+    border-radius: 5px;
+    width: 50%;
+    height: 25px;
+}
+
+.input1:hover{
+    border: #02b108 solid;
+
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    left: 160px;
+  }
+  
+  .button1 {
+    background-color: rgb(131, 209, 111); 
+    color: rgb(0, 0, 0); 
+    border: 2px solid #4CAF50;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  .button2 {
+    background-color: rgb(112, 189, 240); 
+    color: rgb(0, 0, 0); 
+    border: 2px solid #469cff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .button2:hover {
+    background-color: #3336f3;
+    color: white;
+  }
