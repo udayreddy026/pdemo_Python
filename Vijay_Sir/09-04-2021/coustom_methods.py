@@ -1,13 +1,12 @@
 class Person:
     def __init__(self, list):
         # for z in range(0, len(list), 1): # Picking index values
-        for z in range(0, len(list)):  # Piking list Elements
     # def __init__(self, name, age, gender, phone, aadhaar):
-            self.p_name = list[z]
-            self.p_age = list[z]
-            self.p_gender = list[z]
-            self.p_phone = list[z]
-            self.p_aadhaar = list[z]
+        self.p_name = list[0]
+        self.p_age = list[1]
+        self.p_gender = list[2]
+        self.p_phone = list[3]
+        self.p_aadhaar = list[4]
 
     def details(self):
         p = f'Person name is: {self.p_name}\n Person age is:{self.p_age}\n Person Phone Number:{self.p_phone}\n Person Gender is:{self.p_gender}\n' \
@@ -36,7 +35,7 @@ for a in person_info:
         person_details.append(aadhaar)
 
 p1 = Person(person_details)
-print(p1.details())
+p1.details()
 
 
 
