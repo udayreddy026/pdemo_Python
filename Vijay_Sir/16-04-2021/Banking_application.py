@@ -10,16 +10,19 @@ class Bank:  #Class
     def credit(self, debited_money): # Method credit
         self.ac_balance = self.ac_balance + debited_money
         Bank.bank_total_amount = Bank.bank_total_amount + debited_money
+        print("Account Balances is :", self.ac_balance)
 
     def debited(self, withdraws_money):
         if self.ac_balance >= 500 :
             self.ac_balance = self.ac_balance - withdraws_money
             Bank.bank_total_amount = Bank.bank_total_amount - withdraws_money
+            print("Account Balances is :", self.ac_balance)
+
         elif self.ac_balance <= 500:
             print("Low Balances")
 
-    def balance(self):
-        print("Account Balances is:", self.ac_balance)
+    # def __int__(self):
+    #     print("Account Balances is:", self.ac_balance)
 
 
 uday = Bank(1025423, 5000, 'TU10324D')
@@ -30,5 +33,6 @@ print("Uday Bank Balance:", jock.ac_number, jock.ac_balance)
 print()
 
 uday.credit(15000)
-uday.balance()
+uday.debited(10000)
+
 
