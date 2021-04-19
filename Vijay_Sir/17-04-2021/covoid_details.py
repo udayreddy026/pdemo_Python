@@ -1,3 +1,4 @@
+recovery_cases = 0
 class Covid:
     total_india = 0
     total_male_attacks = 0
@@ -10,7 +11,7 @@ class Covid:
         Covid.total_male_attacks = Covid.total_male_attacks + self.male_attacks
         Covid.total_female_attacks = Covid.total_female_attacks + self.female_attacks
 
-    def ap_covid(self, ap_male_attacks, ap_female_attacks):
+    def ap_covid(self, ap_male_attacks, ap_female_attacks, ap_recovery):
         total_ap_attack = 0
         total_ap_attack = total_ap_attack + ap_male_attacks + ap_female_attacks
         Covid.total_india = total_ap_attack + Covid.total_india
@@ -48,10 +49,11 @@ Total TN covid attack: {total_tn_attack}''')
 
 
 c = Covid(10, 20)
-c.ap_covid(50, 50)
+c.ap_covid(50, 50, 40)
 c.ka_covid(150, 100)
 c.tn_covid(500, 300)
 
 print("total in india female covid attacks:", c.total_female_attacks)
 print("total in india male covid attacks", c.total_male_attacks)
 print("over all india covid attacks", c.total_india)
+print("Recovery Cases is:", recovery_cases)
