@@ -10,6 +10,7 @@ class Trr:
 
 class Tvr:
     z = 'Uday'
+    
     def __init__(self):
         self.house = '1flower'
         self.bike = 'CD-100'
