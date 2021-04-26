@@ -12,3 +12,5 @@ while num > 0:
 
 div_res = temp // res
 print(div_res)
+
+# input number 36 and it will need sum of this number like 3 + 6 = 9 and dividing 36 / 9 = 4
