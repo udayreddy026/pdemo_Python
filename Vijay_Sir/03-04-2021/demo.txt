@@ -1,0 +1,251 @@
+
+Beautiful Soup (HTML parser) - Wikipedia
+
+Beautiful Soup (HTML parser)
+
+From Wikipedia, the free encyclopedia
+
+
+
+Jump to navigation
+Jump to search
+For other uses, see Beautiful Soup.
+Beautiful SoupOriginal author(s)Leonard RichardsonInitial release2004�(2004)Stable release4.9.3
+   / October�3, 2020; 6 months ago�(2020-10-03)
+Repositorycode.launchpad.net/beautifulsoup/
+ Written inPythonPlatformPythonTypeHTML parser library, Web scrapingLicensePython Software Foundation License (Beautiful Soup 3 - an older version) MIT License 4+[1]Websitewww.crummy.com/software/BeautifulSoup/
+Beautiful Soup is a Python package for parsing HTML and XML documents (including having malformed markup, i.e. non-closed tags, so named after tag soup). It creates a parse tree for parsed pages that can be used to extract data from HTML,[2] which is useful for web scraping.[1]
+Beautiful Soup was started by Leonard Richardson, who continues to contribute to the project,[3] and is additionally supported by Tidelift, a paid subscription to open-source maintenance.[4]
+It is available for Python 2.7 and Python 3.
+
+#!/usr/bin/env python3
+# Anchor extraction from HTML document
+from bs4 import BeautifulSoup
+from urllib.request import urlopen
+with urlopen('https://en.wikipedia.org/wiki/Main_Page') as response:
+    soup = BeautifulSoup(response, 'html.parser')
+    for anchor in soup.find_all('a'):
+        print(anchor.get('href', '/'))
+
+Contents
+
+1 Advantages and Disadvantages of Parsers
+2 Release
+3 See also
+4 References
+
+
+Advantages and Disadvantages of Parsers[edit]
+This table summarizes the advantages and disadvantages of each parser library[1]
+
+
+
+Parser
+
+Typical usage
+
+Advantages
+
+Disadvantages
+
+
+Python�s html.parser
+
+BeautifulSoup(markup, "html.parser")
+
+
+Moderately fast
+Lenient (As of Python 2.7.3 and 3.2.)
+
+
+Not as fast as lxml, less lenient than html5lib.
+
+
+lxml�s HTML parser
+
+BeautifulSoup(markup, "lxml")
+
+
+Very fast
+Lenient
+
+
+External C dependency
+
+
+lxml�s XML parser
+
+
+BeautifulSoup(markup, "lxml-xml") 
+BeautifulSoup(markup, "xml")
+
+
+
+Very fast
+The only currently supported XML parser
+
+
+External C dependency
+
+
+html5lib
+
+BeautifulSoup(markup, "html5lib")
+
+
+Extremely lenient
+Parses pages the same way a web browser does
+Creates valid HTML5
+
+
+Very slow
+External Python dependency
+
+Release[edit]
+Beautiful Soup 3 was the official release line of Beautiful Soup from May 2006 to March 2012. The current release is Beautiful Soup 4.9.1 (May 17, 2020). 
+You can install Beautiful Soup 4 with pip install beautifulsoup4.
+
+See also[edit]
+Comparison of HTML parsers
+jsoup
+Nokogiri
+References[edit]
+
+
+^ a b c "Beautiful Soup website". Retrieved 18 April 2012. Beautiful Soup is licensed under the same terms as Python itself CS1 maint: discouraged parameter (link)
+
+^ Hajba, G�bor L�szl� (2018),  Hajba, G�bor L�szl� (ed.), "Using Beautiful Soup", Website Scraping with Python: Using BeautifulSoup and Scrapy, Apress, pp.�41�96, doi:10.1007/978-1-4842-3925-4_3, ISBN�978-1-4842-3925-4
+
+^ "Code�: Leonard Richardson". Launchpad. Retrieved 2020-09-19.
+
+^ Tidelift. "beautifulsoup4 | pypi via the Tidelift Subscription". tidelift.com. Retrieved 2020-09-19.
+
+
+
+
+This computer-library-related article is a stub. You can help Wikipedia by expanding it.vte
+
+
+
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=Beautiful_Soup_(HTML_parser)&oldid=1018767801"
+Categories: Python (programming language) librariesSoftware using the MIT licenseHTML parsersXML parsersComputer library stubsHidden categories: CS1 maint: discouraged parameterAll stub articles
+
+
+
+
+
+
+Navigation menu
+
+
+
+
+Personal tools
+
+
+Not logged inTalkContributionsCreate accountLog in
+
+
+
+
+
+
+Namespaces
+
+
+ArticleTalk
+
+
+
+
+
+
+Variants
+
+
+
+
+
+
+
+
+
+
+Views
+
+
+ReadEditView history
+
+
+
+
+
+
+More
+
+
+
+
+
+
+
+Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Navigation
+
+
+Main pageContentsCurrent eventsRandom articleAbout WikipediaContact usDonate
+
+
+
+
+
+Contribute
+
+
+HelpLearn to editCommunity portalRecent changesUpload file
+
+
+
+
+
+Tools
+
+
+What links hereRelated changesUpload fileSpecial pagesPermanent linkPage informationCite this pageWikidata item
+
+
+
+
+
+Print/export
+
+
+Download as PDFPrintable version
+
+
+
+
+
+Languages
+
+
